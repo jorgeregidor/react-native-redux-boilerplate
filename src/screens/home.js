@@ -6,7 +6,8 @@ import {
   StyleSheet, 
   View, 
   Text, 
-  Button 
+  Button,
+  Header 
 } from "react-native";
 
 class Home extends Component {
@@ -33,13 +34,16 @@ class Home extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>count = {this.state.info.data}</Text>
-        <Button
-          onPress={this.callAction}
-          title="Press Button"
-          color="blue"/>
-      </View>
+
+
+       
+        <View style={styles.container}>
+          <Text>count = {this.state.info.data}</Text>
+          <Button
+            onPress={this.callAction}
+            title="Press Button"
+            color="blue"/>
+        </View>
     );
   }
 }

@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "cuentaAtras",
-    "description": "This project is really great.",
-    "slug": "cuentaAtras",
+    "name": "boilerplate",
+    "description": "This project is a boilerplate",
+    "slug": "boilerplate",
     "privacy": "public",
     "sdkVersion": "30.0.0",
     "platforms": [
@@ -25,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.ezsoftware.boilerplate"
     }
   }
 }
