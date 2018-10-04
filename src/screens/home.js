@@ -21,6 +21,10 @@ class Home extends Component {
     this.callAction = this.callAction.bind(this)
   }
 
+  static navigationOptions = {
+    header: null
+  }
+
   callAction(){
     this.props.fetchInfo(this.state.info)
   }
@@ -41,7 +45,12 @@ class Home extends Component {
           <Text>count = {this.state.info.data}</Text>
           <Button
             onPress={this.callAction}
-            title="Press Button"
+            title="Add One"
+            color="blue"/>
+          <Text/>
+          <Button
+            onPress={() => this.props.navigation.navigate('Other')}
+            title="Other Page"
             color="blue"/>
         </View>
     );
